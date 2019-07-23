@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_register">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_register"
+            android:id="@+id/Register"
+            android:background="@drawable/circle"
+            android:tint="#FFC7C6C7"/>
+
+        <TextView
+            android:id="@+id/Register1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@+id/Register"
+            android:text="REGISTER"
+            android:textColor="#FFC7C6C7"
+            android:textSize="25sp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:rotation="45"
+            android:layout_marginTop="-5dp"
+            android:layout_below="@+id/Register"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/square" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="username"
+            android:id="@+id/Etusername"
+            android:layout_below="@id/Register1"
+            android:drawableLeft="@drawable/ic_username"
+            android:textSize="30sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="password"
+            android:id="@+id/Etpassword"
+            android:layout_below="@id/Etusername"
+            android:drawableLeft="@drawable/ic_password"
+            android:textSize="30sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="Re-type password"
+            android:id="@+id/Rpassword"
+            android:layout_below="@id/Etpassword"
+            android:drawableLeft="@drawable/ic_password"
+            android:textSize="30sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:id="@+id/Email"
+            android:layout_below="@id/Rpassword"
+            android:drawableLeft="@drawable/ic_mail"
+            android:textSize="30sp"
+            android:inputType="textEmailSubject"/>
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_user"
+            android:src="@color/pink"
+
+            android:layout_marginTop="400dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="400dp"
+            android:layout_toRightOf="@id/img"
+            android:text="welcome"
+            android:layout_marginLeft="20dp"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chckbox"
+            android:layout_below="@+id/Email"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:text="I agree to the terms of service"
+            android:textColor="#000"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chckbox"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Sign up"
+            android:id="@+id/button1"/>
+
+        <Button
+            android:id="@+id/goLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:text="Already a member? Login Here"
+            android:textSize="13sp" />
+
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

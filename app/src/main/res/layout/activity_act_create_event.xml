@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_act_create_event">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity_act_create_event">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/Eventttitle"
+            android:hint="Title of event" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="#c17676"
+            android:id="@+id/eventimage"/>
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:hint="date"
+            android:layout_below="@id/eventimage"
+            android:layout_marginTop="50dp"
+            android:id="@+id/Bdate"/>
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:hint="Venue"
+            android:layout_alignBaseline="@id/Bdate"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/BVenue"/>
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@id/Bdate"
+            android:hint="Time"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/Btime"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Description : "
+            android:outlineProvider="background"
+            android:layout_marginTop="70dp"
+            android:textColor="#df4163"
+            android:id="@+id/Desc"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/Bdate"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter DEtails About the Event "
+            android:layout_below="@id/Desc"
+            android:id="@+id/Description"
+            />
+
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Event"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/Description"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

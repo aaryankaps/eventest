@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fff">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageBg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dance_dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/butttonBg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_camera_white"
+            />
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagePd"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/josh_white"
+            app:civ_border_color="#3d0c3e"
+            app:civ_border_width="5dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/butttonPg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="210dp"
+
+            android:src="@drawable/ic_camera_black"
+            app:civ_border_color="#3d0c3e"
+            app:civ_border_width="5dp" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagePd"
+            android:layout_centerHorizontal="true"
+            android:text="Josh"
+            android:textColor="#521952"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/buttonJosh"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_below="@+id/tvName"
+            android:layout_marginTop="35dp"
+            android:background="#a76a91"
+            android:text="About Josh"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bPosts"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/buttonJosh"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_add"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bPosts"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:text="Add Posts" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bEvents"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/buttonJosh"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_events2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bPosts"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Events" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bSocial"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/buttonJosh"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_social" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bPosts"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="10dp"
+            android:text="Social" />
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

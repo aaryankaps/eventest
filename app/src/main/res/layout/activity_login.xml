@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_login"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/josh_white"
+        android:id="@+id/joshlogo"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:hint="username"
+        android:id="@+id/Etusername"
+        android:layout_below="@id/joshlogo"
+        android:layout_marginLeft="90dp"
+        android:drawableLeft="@drawable/ic_username"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:hint="Password"
+        android:id="@+id/Etpassword"
+        android:layout_below="@+id/Etusername"
+        android:layout_marginLeft="90dp"
+        android:drawableLeft="@drawable/ic_password"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="login"
+        android:layout_below="@id/Etpassword"
+        android:background="#c84770b7"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/Blogin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Already_register?"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Blogin"
+        android:layout_marginLeft="85dp"
+        android:textColor="#000"
+        android:id="@+id/alreadyregister"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Register"
+        android:layout_toRightOf="@id/alreadyregister"
+        android:textColor="#000"
+        android:layout_below="@id/Blogin"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
